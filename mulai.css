@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(140, 177, 185);
+    --second-bg-color: rgb(197, 215, 98);
+    --text-color: #193940;
+    --main-color: #fff;
+}
+
+body {
+    font-family: "Lucia Grande", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 2.25rem; /* 36px */
+    z-index: 1000;
+}
+
+#main-content {
+    display: none;
+    padding: 1.25rem; /* 20px */
+}
+
+header {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 0.625rem 0; /* 10px 0 */
+    padding: 3.125rem; /* 50px */
+    text-align: center;
+    font-size: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+nav {
+    text-align: center;
+    margin: 3.75rem 0; /* 60px */
+}
+
+nav a {
+    margin: 0 0.625rem; /* 10px */
+    padding: 1.625rem; /* 26px */
+    text-decoration: none;
+    color: var(--second-bg-color);
+    background-color: var(--text-color);
+    border-radius: 0.625rem; /* 10px */
+    font-size: 1.875rem; /* 3rem */
+    border: 0.125rem solid var(--text-color); /* 2px */
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(2) translateY(-0.125rem); /* -2px */
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+section {
+    background: whitesmoke;
+    padding: 1.25rem; /* 20px */
+    margin: 4.375rem; /* 70px */
+    border-radius: 1.25rem; /* 20px */
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+section h2 {
+    color: var(--text-color);
+    font-size: 1.875rem; /* 3rem */
+}
+
+h2 {
+    margin-top: 2.5rem; /* 40px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+section h4 {
+    color: var(--text-color);
+    font-size: 1.25rem; /* 2rem */
+    margin-top: 1.25rem; /* 20px */
+}
+
+ul {
+    font-size: 1.25rem; /* 2rem */
+    line-height: 1.5;
+    margin-left: 12.5rem; /* 200px */
+}
+
+p {
+    font-size: 1.25rem; /* 2rem */
+    line-height: 1.5;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.button-link {
+    display: block;
+    margin: 0.625rem 0; /* 10px */
+    padding: 0.8125rem 1.25rem; /* 13px 20px */
+    background-color: var(--text-color);
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.9375rem; /* 15px */
+    font-size: 1.6rem;
+    transition: 0.3s ease-in-out;
+    width: 31.25rem; /* 500px */
+}
+
+.button-link:hover {
+    transform: scale(1) translateY(-0.3125rem); /* -5px */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--text-color);
+}
+
+#quiz {
+    display: none;
+    margin-top: 1.25rem; /* 20px */
+    padding: 1.25rem; /* 20px */
+    background-color: #f9f9f9;
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: #193940;
+    margin-bottom: 0.9375rem; /* 15px */
+    font-size: 1.25rem; /* 2rem */
+}
+
+.question {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+label {
+    font-size: 1.25rem; /* 2rem */
+    margin-left: 0.625rem; /* 10px */
+}
+
+button {
+    background-color: #193940;
+    color: white;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: 1.25rem; /* 20px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a7a8c;
+}
+
+footer {
+    text-align: center;
+    padding: 1.875rem; /* 30px */
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    margin-top: 1.25rem; /* 20px */
+}
+
+#quiz-result {
+    font-size: 1.25rem; /* 2rem */
+    color: #193940;
+    margin-top: 1.25rem; /* 20px */
+    padding: 0.625rem; /* 10px */
+    border: 0.125rem solid #193940; /* 2px */
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #f0f0f0;
+}
+
+h5 {
+    font-size: 1.5625rem; /* 2.5rem */
+    margin-top: 1.875rem; /* 30px */
+}

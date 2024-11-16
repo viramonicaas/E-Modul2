@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Modul Interaktif - Pola Bilangan</title>
+    <link rel="stylesheet" href="mulai.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+ <div id="splash-screen">
+   P  O  L  A ~ B  I  L  A  N  G  A  N
+ </div>
+
+ <div id="main-content">
+    <h1>M A T E M A T I K A</h1>
+    <p>S M P</p>
+ </div>
+
+<header>
+    <h1>E - MODUL INTERAKTIF</h1>
+    <a>Belajar dengan cara yang menyenangkan dan interaktif</a>
+</header>
+
+<nav>
+    <a href="index.html" onclick="showModule('kelas7')">HOME</a>
+</nav>
+
+<section id="kelas8" class="active">
+
+    <h2>Materi Pola Bilangan</h2>
+    <p>Rumus Pola Bilangan, Jenis-Jenis & Contohnya</p>
+
+    <div>
+        <h2>Pengenalan Pola Bilangan</h2>
+        <p>Pola bilangan adalah urutan angka yang mengikuti aturan tertentu. Pola ini dapat berupa penjumlahan, pengurangan, perkalian, atau pembagian.</p>
+
+        <h2>Rumus Pola Bilangan</h2>
+        <ul>
+            <li><strong>Pola Bilangan Aritmatika:</strong> Pola yang diperoleh dari penjumlahan bilangan tetap (beda). Rumus: <strong>a<sub>n</sub> = a<sub>1</sub> + (n - 1) * d</strong>, di mana <em>a<sub>1</sub></em> adalah suku pertama, <em>d</em> adalah beda, dan <em>n</em> adalah urutan suku.</li>
+            <li><strong>Pola Bilangan Geometri:</strong> Pola yang diperoleh dari perkalian bilangan tetap (rasio). Rumus: <strong>a<sub>n</sub> = a<sub>1</sub> * r<sup>(n - 1)</sup></strong>, di mana <em>r</em> adalah rasio.</li>
+        </ul>
+
+        <h2>Jenis-Jenis Pola Bilangan</h2>
+        <ul>
+            <li><strong>Pola Bilangan Aritmatika:</strong> Contoh: 2, 4, 6, 8, 10 (beda = 2).</li>
+            <li><strong>Pola Bilangan Geometri:</strong> Contoh: 3, 6, 12, 24, 48 (rasio = 2).</li>
+            <li><strong>Pola Bilangan Segitiga:</strong> Contoh: 1, 3, 6, 10, 15 (suku ke-n = n(n + 1)/2).</li>
+            <li><strong>Pola Bilangan Persegi:</strong> Contoh: 1, 4, 9, 16, 25 (suku ke-n = n<sup>2</sup>).</li>
+            <li><strong>Pola Bilangan Fibonacci:</strong> Contoh: 0, 1, 1, 2, 3, 5, 8, 13, ... (setiap suku adalah jumlah dari dua suku sebelumnya).</li>
+        </ul>
+
+        <h2>Contoh Soal</h2>
+        <p>1. Tentukan suku ke-5 dari pola bilangan aritmatika 5, 10, 15, ...</p>
+        <p><strong>Jawaban:</strong> 
+        <br>
+        a<sub>5</sub> = 5 + (5 - 1) * 5 = 5 + 20 = 25
+        </p>
+
+        <p>2. Tentukan suku ke-4 dari pola bilangan geometri 2, 6, 18, ...</p>
+        <p><strong>Jawaban:</strong> 
+            <br>
+            a<sub>4</sub> = 2 * 3<sup>(4 - 1)</sup> 
+            <br>
+            = 2 * 27 
+            <br>
+            = 54
+            </p>
+    
+            <h2>Latihan Soal</h2>
+            <p><strong>Kerjakan soal-soal berikut:</strong></p>
+            <ol>
+                <p>1. Jika suku pertama dari pola bilangan aritmatika adalah 7 dan beda adalah 3, tentukan suku ke-6!</p>
+                <p>2. Tentukan suku ke-5 dari pola bilangan geometri yang dimulai dari 5 dengan rasio 2!</p>
+            </ol>
+            
+            <a href="https://www.quipper.com/id/blog/mapel/matematika/pola-bilangan/" class="button-link">Materi Lengkap</a>
+            <p>Kerjakan kuis berikut untuk menguji pemahaman Anda:</p>
+            <button class="button-link" onclick="showQuiz()">Tampilkan Kuis</button>
+            
+        <div id="quiz" style="display: none;"> <!-- Awalnya disembunyikan -->
+            <h3>Kuis Pilihan Ganda</h3>
+            <div class="question">
+                <p>1. Apa suku ke-4 dari pola bilangan aritmatika 3, 6, 9, ...?</p>
+                <label><input type="radio" name="q1" value="1"> 9</label><br>
+                <label><input type="radio" name="q1" value="2"> 12</label><br>
+                <label><input type="radio" name="q1" value="3"> 15</label><br>
+                <label><input type="radio" name="q1" value="4"> 6</label>
+            </div>
+            <div class="question">
+                <p>2. Apa suku ke-3 dari pola bilangan geometri 2, 4, 8, ...?</p>
+                <label><input type="radio" name="q2" value="1"> 8</label><br>
+                <label><input type="radio" name="q2" value="2"> 16</label><br>
+                <label><input type="radio" name="q2" value="3"> 4</label><br>
+                <label><input type="radio" name="q2" value="4"> 32</label>
+            </div>
+            <div class="question">
+                <p>3. Suku ke-5 dari pola bilangan segitiga adalah ...?</p>
+                <label><input type="radio" name="q3" value="1"> 10</label><br>
+                <label><input type="radio" name="q3" value="2"> 15</label><br>
+                <label><input type="radio" name="q3" value="3"> 20</label><br>
+                <label><input type="radio" name="q3" value="4"> 21</label>
+            </div>
+            <button onclick="submitQuiz3()">Kirim Jawaban</button>
+            <div id="quiz-result"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy;Vira Monica | All Rights Reserved</p>
+    </footer>
+    
+    </body>
+    </html>
