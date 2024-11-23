@@ -14,26 +14,22 @@ function showModule(moduleId) {
 }
 
 function showQuiz() {
-    document.getElementById('quiz').style.display = 'block'; // Tampilkan kuis
+    document.getElementById('quiz').style.display = 'block';
 }
 
 function submitQuiz1() {
     let score = 0;
     const totalQuestions = 2;
-
-    // Cek jawaban untuk pertanyaan 1
     const q1 = document.querySelector('input[name="q1"]:checked');
-    if (q1 && q1.value == "1") { // 3 adalah jawaban yang benar
+    if (q1 && q1.value == "1") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 2
     const q2 = document.querySelector('input[name="q2"]:checked');
-    if (q2 && q2.value == "3") { // 8°C adalah jawaban yang benar
+    if (q2 && q2.value == "3") {
         score++;
     }
 
-    // Tampilkan hasil
     document.getElementById('quiz-result').innerText = `Anda mendapatkan ${score} dari ${totalQuestions} soal.`;
 }
 
@@ -41,25 +37,22 @@ function submitQuiz2() {
     let score = 0;
     const totalQuestions = 3;
 
-    // Cek jawaban untuk pertanyaan 1
     const q1 = document.querySelector('input[name="q1"]:checked');
-    if (q1 && q1.value == "1") { // 3 adalah jawaban yang benar
+    if (q1 && q1.value == "1") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 2
     const q2 = document.querySelector('input[name="q2"]:checked');
-    if (q2 && q2.value == "2") { // 4 adalah jawaban yang benar
+    if (q2 && q2.value == "2") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 3
     const q3 = document.querySelector('input[name="q3"]:checked');
-    if (q3 && q3.value == "1") { // 6x adalah jawaban yang benar
+    if (q3 && q3.value == "1") {
         score++;
     }
 
-    // Tampilkan hasil
+
     document.getElementById('quiz-result').innerText = `Anda mendapatkan ${score} dari ${totalQuestions} soal.`;
 }
 
@@ -67,25 +60,22 @@ function submitQuiz3() {
     let score = 0;
     const totalQuestions = 3;
 
-    // Cek jawaban untuk pertanyaan 1
+
     const q1 = document.querySelector('input[name="q1"]:checked');
-    if (q1 && q1.value == "2") { // 3 adalah jawaban yang benar
+    if (q1 && q1.value == "2") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 2
     const q2 = document.querySelector('input[name="q2"]:checked');
-    if (q2 && q2.value == "2") { // 4 adalah jawaban yang benar
+    if (q2 && q2.value == "2") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 3
     const q3 = document.querySelector('input[name="q3"]:checked');
-    if (q3 && q3.value == "4") { // 6x adalah jawaban yang benar
+    if (q3 && q3.value == "4") {
         score++;
     }
 
-    // Tampilkan hasil
     document.getElementById('quiz-result').innerText = `Anda mendapatkan ${score} dari ${totalQuestions} soal.`;
 }
 
@@ -93,25 +83,21 @@ function submitQuiz4() {
     let score = 0;
     const totalQuestions = 3;
 
-    // Cek jawaban untuk pertanyaan 1
     const q1 = document.querySelector('input[name="q1"]:checked');
-    if (q1 && q1.value == "2") { // 8 adalah jawaban yang benar
+    if (q1 && q1.value == "2") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 2
     const q2 = document.querySelector('input[name="q2"]:checked');
-    if (q2 && q2.value == "3") { // 7 adalah jawaban yang benar
+    if (q2 && q2.value == "3") {
         score++;
     }
 
-    // Cek jawaban untuk pertanyaan 3
     const q3 = document.querySelector('input[name="q3"]:checked');
-    if (q3 && q3.value == "2") { // 81 adalah jawaban yang benar
+    if (q3 && q3.value == "3") {
         score++;
     }
 
-    // Tampilkan hasil
     document.getElementById('quiz-result').innerText = `Anda mendapatkan ${score} dari ${totalQuestions} soal.`;
 }
 
@@ -133,16 +119,13 @@ function showModule(moduleId) {
 
 function showQuiz() {
     const quiz = document.getElementById('quiz');
-    const toggleButton = document.getElementById('toggle-quiz'); // Pastikan ID tombol sesuai
+    const toggleButton = document.getElementById('toggle-quiz');
 
     if (quiz.style.display === 'none' || quiz.style.display === '') {
-        quiz.style.display = 'block'; // Tampilkan kuis
-        toggleButton.innerText = 'Sembunyikan Kuis'; // Ubah teks tombol
+        quiz.style.display = 'block';
+        toggleButton.innerText = 'Sembunyikan Kuis';
     } else {
-        quiz.style.display = 'none'; // Sembunyikan kuis
-        toggleButton.innerText = 'Tampilkan Kuis'; // Ubah teks tombol
+        quiz.style.display = 'none';
+        toggleButton.innerText = 'Tampilkan Kuis';
     }
 }
-
-// Fungsi submitQuiz1, submitQuiz2, submitQuiz3, submitQuiz4 tetap sama
-// ...
